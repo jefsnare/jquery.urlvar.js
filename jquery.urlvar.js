@@ -56,9 +56,9 @@
         /**
          * Search in url path for string
          */
-        inUrl: function (search) {
-            var url = window.location.replace('http://','').replace('https://','').split('/');
-            return $.inArray(search, url) !== -1;
-        }
+         inUrlPath: function (search) {
+             var url = window.location.pathname.split('/');
+             return $.inArray(search, url) !== -1;
+         }
     });
 }(jQuery));
